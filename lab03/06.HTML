@@ -1,0 +1,275 @@
+<html>
+  <head>
+    <title>Exercise 5</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 1000px;
+        margin: 50px auto;
+      }
+      .main-table {
+        background-color: #454545;
+        padding: 10px;
+      }
+      .header-table {
+        width: 100%;
+      }
+      .headers {
+        padding: 5px;
+      }
+      .heading {
+        background-color: #00b9e3;
+        text-align: center;
+      }
+      .left-header {
+        color: #00b9e3;
+        text-align: center;
+        font-size: 20px;
+      }
+      .pricing {
+        background-color: #000;
+        text-align: center;
+      }
+      .price {
+        font-size: 34px;
+      }
+      .price span {
+        color: #00b9e3;
+      }
+      .bill {
+        font-size: 12px;
+      }
+      .bold {
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .hidden {
+        opacity: 0;
+      }
+      .align-left {
+        text-align: left;
+      }
+      .check p {
+        color: #00b9e3;
+      }
+      .cross p {
+        color: #ff0000;
+      }
+      td {
+        background-color: #2c2c2c;
+        padding: 15px;
+        text-align: center;
+      }
+      p {
+        color: #fff;
+      }
+      button {
+        background-color: #00b9e3;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 5px 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="main-table">
+        <tr>
+          <td>
+            <p class="left-header">Chose your Plan</p>
+          </td>
+          <td class="headers">
+            <table class="header-table">
+              <tr>
+                <td class="heading">
+                  <p>starter</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="pricing">
+                  <p class="price">$ <span>10</span></p>
+                  <p class="bill">per month</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="headers">
+            <table class="header-table">
+              <tr>
+                <td class="heading">
+                  <p>corporate</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="pricing">
+                  <p class="price">$ <span>20</span></p>
+                  <p class="bill">per month</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="headers">
+            <table class="header-table">
+              <tr>
+                <td class="heading">
+                  <p>business</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="pricing">
+                  <p class="price">$ <span>30</span></p>
+                  <p class="bill">per month</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="headers">
+            <table class="header-table">
+              <tr>
+                <td class="heading">
+                  <p>professional</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="pricing">
+                  <p class="price">$ <span>40</span></p>
+                  <p class="bill">per month</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-left">
+            <p>Amount of space</p>
+          </td>
+          <td>
+            <p><span class="bold">10GB</span> Disk space</p>
+          </td>
+          <td>
+            <p><span class="bold">20GB</span> Disk space</p>
+          </td>
+          <td>
+            <p><span class="bold">30GB</span> Disk space</p>
+          </td>
+          <td>
+            <p><span class="bold">40GB</span> Disk space</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-left">
+            <p>Bandwith per month</p>
+          </td>
+          <td>
+            <p><span class="bold">100GB</span> Bandwith</p>
+          </td>
+          <td>
+            <p><span class="bold">200GB</span> Bandwith</p>
+          </td>
+          <td>
+            <p><span class="bold">300GB</span> Bandwith</p>
+          </td>
+          <td>
+            <p><span class="bold">400GB</span> Bandwith</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-left">
+            <p>MySql Databases</p>
+          </td>
+          <td>
+            <p><span class="bold">1</span> Databases</p>
+          </td>
+          <td>
+            <p><span class="bold">2</span> Databases</p>
+          </td>
+          <td>
+            <p><span class="bold">3</span> Databases</p>
+          </td>
+          <td>
+            <p><span class="bold">4</span> Databases</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-left">
+            <p>Email Accounts</p>
+          </td>
+          <td>
+            <p><span class="bold">1</span> Accounts</p>
+          </td>
+          <td>
+            <p><span class="bold">2</span> Accounts</p>
+          </td>
+          <td>
+            <p><span class="bold">3</span> Accounts</p>
+          </td>
+          <td>
+            <p><span class="bold">4</span> Accounts</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-left">
+            <p>24h support</p>
+          </td>
+          <td class="check">
+            <p>&check;</p>
+          </td>
+          <td class="check">
+            <p>&check;</p>
+          </td>
+          <td class="check">
+            <p>&check;</p>
+          </td>
+          <td class="check">
+            <p>&check;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-left">
+            <p>E-mail support</p>
+          </td>
+          <td class="cross">
+            <p>&cross;</p>
+          </td>
+          <td class="cross">
+            <p>&cross;</p>
+          </td>
+          <td class="cross">
+            <p>&cross;</p>
+          </td>
+          <td class="cross">
+            <p>&cross;</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="hidden"></td>
+          <td>
+            <p class="price">$ <span>10</span></p>
+            <p class="bill">per month</p>
+            <button>Sign up</button>
+          </td>
+          <td>
+            <p class="price">$ <span>20</span></p>
+            <p class="bill">per month</p>
+            <button>Sign up</button>
+          </td>
+          <td>
+            <p class="price">$ <span>30</span></p>
+            <p class="bill">per month</p>
+            <button>Sign up</button>
+          </td>
+          <td>
+            <p class="price">$ <span>40</span></p>
+            <p class="bill">per month</p>
+            <button>Sign up</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

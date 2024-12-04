@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 01</title>
+  </head>
+  <body>
+    <script>
+      var msg = prompt("please enter a message :");
+      document.write("<h1>Heading</h1><hr>");
+      for (var i = 1; i <= 6; i++) {
+        document.write(`<h${i} >${msg}</h${i}>`);
+      }
+
+      do
+        var no = Number(
+          prompt("please enter the number of values you want to sum: ")
+        );
+      while (isNaN(no) || no <= 0);
+      var result = 0;
+      var input = 0;
+      for (var j = 0; j < no; j++) {
+        do {
+          input = prompt("please enter a vlid number: ");
+        } while (isNaN(input));
+        if (Number(input) === 0 || result >= 100) break;
+        result += Number(input);
+      }
+      alert(result);
+    </script>
+  </body>
+</html>

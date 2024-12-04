@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 500px;
+        margin: 20px auto;
+        border: 3px solid #333;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .btn-container {
+        text-align: center;
+        width: 98%;
+      }
+      .log-in {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 60px;
+        background-color: grey;
+      }
+      .facebook {
+        background-color: blue;
+        color: white;
+        width: 25%;
+      }
+      .facebook:hover {
+        background-color: rgb(0, 0, 139);
+      }
+
+      .twitter {
+        background-color: rgb(0, 153, 255);
+        color: white;
+        width: 25%;
+      }
+      .twitter:hover {
+        background-color: rgb(0, 92, 153);
+      }
+      .or {
+        margin-top: 20px;
+        display: inline-block;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        background-color: #ccc;
+        border-radius: 50%;
+      }
+      .input {
+        margin: 15px auto;
+        display: block;
+        padding: 5px;
+        width: 100%;
+        height: 30px;
+      }
+      .check-box {
+        width: 24px;
+        display: inline-block;
+      }
+      label {
+        display: inline-block;
+        margin-right: 35px;
+        margin-left: 5px;
+        font-size: 14px;
+        color: #777;
+      }
+      .pass {
+        text-decoration: none;
+        color: #777;
+      }
+      .login-btn {
+        clear: both;
+        display: block;
+        background-color: blue;
+        color: white;
+        width: 100%;
+        margin: 15px auto;
+        padding: 10px 0;
+        text-decoration: none;
+      }
+      .login-btn:hover {
+        background-color: rgb(0, 0, 139);
+      }
+      .sign-up:link,
+      .sign-up:visited {
+        text-decoration: none;
+        color: rgb(21, 160, 252);
+        transition: all 0.3s;
+      }
+      .sign-up:hover,
+      .sign-up:active {
+        color: rgb(0, 109, 182);
+        border-bottom: 1px solid rgb(0, 109, 182);
+      }
+      .form-container {
+        width: 98%;
+      }
+      .options label {
+        font-size: 18px;
+        float: left;
+        margin-bottom: 10px;
+      }
+      .options a {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn-container">
+        <a href="#" class="log-in facebook">Login to Facebook</a>
+        <a href="#" class="log-in twitter">Login to Twitter</a>
+      </div>
+      <p class="or">or</p>
+      <div class="form-container">
+        <form action="#">
+          <input
+            class="input"
+            type="text"
+            name="username"
+            placeholder="Username"
+          />
+          <input
+            class="input"
+            type="password"
+            name="password"
+            placeholder="*******"
+          />
+          <div class="options">
+            <label for="check">
+              <input type="checkbox" id="check" class="check-box" />
+              keep me signed in
+            </label>
+            <a href="#" class="pass">Forgot Your Password?</a>
+          </div>
+          <a href="#" class="login-btn">Login</a>
+          <p>Not a member ? <a href="#" class="sign-up">Sign up now!</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

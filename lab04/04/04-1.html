@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4-1</title>
+  </head>
+  <body>
+    <script>
+      var input;
+      var sRadix;
+      var tRadix;
+      do {
+        input = prompt("Please enter a valid number:");
+      } while (isNaN(input));
+
+      do {
+        sRadix = prompt("Please enter the starting radix: '2-36' ");
+      } while (isNaN(sRadix) || +sRadix < 2 || +sRadix > 36);
+      do {
+        tRadix = prompt("Please enter the target radix: '2-36' ");
+      } while (isNaN(tRadix) || +tRadix < 2 || +tRadix > 36);
+      var decimal = parseInt(input, sRadix);
+      var output = decimal.toString(tRadix);
+      alert(`The result is ${output}`);
+    </script>
+  </body>
+</html>

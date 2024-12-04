@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4-2</title>
+  </head>
+  <body>
+    <script>
+      var input;
+      do input = prompt("please enter valid number: ");
+      while (isNaN(input));
+      console.log(`Egypt locale : ${Number(input).toLocaleString("ar-EG")}`);
+      console.log(
+        `Saudi Arabia locale : ${Number(input).toLocaleString("ar-SA")}`
+      );
+      console.log(`Germany locale : ${Number(input).toLocaleString("de-DE")}`);
+      console.log(`USA locale : ${Number(input).toLocaleString("en-US")}`);
+      console.log(`UK locale : ${Number(input).toLocaleString("en-UK")}`);
+    </script>
+  </body>
+</html>

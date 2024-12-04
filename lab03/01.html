@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 01</title>
+    <style>
+      body {
+        background-image: url(/img/01.jpg);
+      }
+      .container {
+        width: 800px;
+        margin: 20px auto;
+        border: 8px groove grey;
+        background-color: #fff;
+      }
+      .header {
+        margin: 30px 15px 10px 15px;
+        background-color: pink;
+        border: 2px solid grey;
+        text-align: center;
+        padding: 40px 20px 20px 20px;
+      }
+      .header img {
+        height: 60px;
+      }
+      .header h2 {
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 32px;
+      }
+      .secondary-heading {
+        display: inline-block;
+        text-decoration: underline;
+        font-size: 32px;
+      }
+      a {
+        color: red;
+      }
+      .main {
+        border: 2px solid grey;
+        background-color: pink;
+        margin: 5px 15px;
+        padding: 10px 25px;
+      }
+      .main ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .main li {
+        text-decoration: underline;
+        font-size: 24px;
+        color: red;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      span {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .footer {
+        display: block;
+        padding: 0;
+        border: none;
+        margin: 10px 15px;
+        background-color: pink;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="/img/1-1.jpg" alt="" />
+        <h2>Terps Calculators Inc.</h2>
+        <img src="/img/1-2.jpg" alt="" />
+      </div>
+      <div class="links header">
+        <a href="#">http://www.umd.edu</a>
+        <a href="#">http://www.cs.umd.edu</a>
+        <a href="#">http://www.tesudo.umd.edu</a>
+      </div>
+      <div class="main">
+        <h3 class="secondary-heading">Introduction</h3>
+        <p class="main-text">
+          <span>Terps Calculators Inc.</span>
+          implements and provide these calculators for your use.We keep
+          expanding our collection every day, so make sure you stop by ogten.
+        </p>
+        <h3 class="secondary-heading">Calculators</h3>
+        <ul>
+          <li><img src="/img/1-3.jpg" alt="calc" />Grades Calculator</li>
+          <li><img src="/img/1-3.jpg" alt="calc" />Interest Calculator</li>
+        </ul>
+      </div>
+      <div class="footer">
+        <span>Terps Calculators Inc.&REG;</span>
+      </div>
+    </div>
+  </body>
+</html>
